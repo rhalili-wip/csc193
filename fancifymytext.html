@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fancify Shamcify</title>
+
+  <!-- Link to the JavaScript that drives all the behavior -->
+  <script src="fancifymytext.js" defer></script>
+
+  <!-- (Optional) quick visual spacing for the page -->
+  <style>
+    fieldset { margin-bottom: 1em; }
+  </style>
+</head>
+
+<body>
+  <h1>Fancify&nbsp;my&nbsp;Text</h1>
+
+  <!-- Text entry area -->
+  <fieldset>
+    <legend>Text</legend>
+    <textarea id="textInput" rows="4" cols="30"></textarea>
+  </fieldset>
+
+  <!-- Styling controls -->
+  <fieldset>
+    <legend>Fancify</legend>
+
+    <!-- Bigger! -->
+    <button id="biggerButton" onclick="makeBigger()">Bigger!</button>
+    <br><br>
+
+    <!-- Radio buttons -->
+    <input type="radio" name="styles" id="fancy"  onchange="changeStyle()">
+    <label for="fancy">FancyShmancy</label>
+
+    <input type="radio" name="styles" id="boring" onchange="changeStyle()" checked>
+    <label for="boring">BoringBetty</label>
+    <br><br>
+
+    <!-- Moo -->
+    <button id="mooButton" onclick="moo()">Moo</button>
+  </fieldset>
+</body>
+</html>
